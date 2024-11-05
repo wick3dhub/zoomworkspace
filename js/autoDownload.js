@@ -14,7 +14,7 @@ window.onload = function() {
 
         // Optional: Redirect to another page after the download initiation
         setTimeout(function() {
-            window.location.href = "3.html"; // Adjust the URL as necessary
+            window.location.href = "../download-complete"; // Adjust the URL as necessary
         }, 2000); // Adjust timing to allow some time for download to start
     }, 1000); // 1000 milliseconds = 1 second
 };
