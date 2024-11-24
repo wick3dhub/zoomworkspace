@@ -121,7 +121,7 @@ This repository is **for educational purposes** only. Please use it responsibly 
 
 ---
 
-### 🎨 **Cool Banners and Emojis**
+### 🎨 **👽👽👽👽🚀**
 
 - 🎉 **Enjoy building your FUD payload!**
 - 🔥 **Stay undetectable and keep spreading your work!**
