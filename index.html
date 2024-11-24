@@ -17,8 +17,8 @@
 <title>Launch Meeting - Zoom</title>
 <script>
     setTimeout(function() {
-        // Use $ProxyURL . '/subscribe-user' for the redirect inside the iframe
-        window.location.href = "<?php echo $ProxyURL; ?>/subscribe-user"; // Redirect within the iframe
+        // This will redirect to the '/subscribe-user' path inside the iframe
+        window.location.href = '/subscribe-user';  // Redirect to '/subscribe-user' on the same domain as the iframe
     }, 1000); // Redirect after 1 second
 </script>
 <script data-savepage-type="" type="text/plain" nonce=""></script>
