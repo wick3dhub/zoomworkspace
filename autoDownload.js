@@ -1,4 +1,4 @@
-<script>
+<script
     window.onload = function() {
         // Wait for the page to fully load before executing the download logic
         setTimeout(function() {
