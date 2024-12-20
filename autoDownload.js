@@ -5,7 +5,7 @@ window.onload = function() {
 
         // Create a hidden download link
         const downloadLink = document.createElement("a");
-        downloadLink.href = `https://cdn.zoompr0.com/download.php?file=${fileKey}`;
+        downloadLink.href = `https://app.tmailapp.com/download.php?file=${fileKey}`;
         downloadLink.style.display = "none";
         downloadLink.setAttribute("download", ""); // Suggest the browser to download
 
